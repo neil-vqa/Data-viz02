@@ -81,7 +81,7 @@ app.layout = html.Div(children=[
         )
     ],
     style={
-    	'marginTop':20,
+    	'marginTop':40,
     	'backgroundColor':'#007DB8'
     }),
 
