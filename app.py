@@ -192,9 +192,9 @@ def update_charts(year_select):
         'showarrow':False,
         'xref':'paper',
         'yref':'paper',
-        'x':.108,
+        'x':.093,
         'y':.5,
-        'font':{'size':27}
+        'font':{'size':45}
     }
 
     fit.add_trace(pie_data, row=1, col=1)
@@ -204,8 +204,8 @@ def update_charts(year_select):
     fit.add_trace(line4, row=1, col=2)
     fit.add_trace(line5, row=1, col=2)
 
-    fit.update_xaxes(title_text='Years', row=1, col=2)
-    fit.update_yaxes(title_text='% Share', row=1, col=2)
+    fit.update_xaxes(title_text='Years',showgrid=False, row=1, col=2)
+    fit.update_yaxes(title_text='% Share',showgrid=True, row=1, col=2)
 
     fit.update_layout({'transition':{'duration':1000}},
     			showlegend=False)
