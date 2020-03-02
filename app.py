@@ -6,11 +6,9 @@ import plotly.graph_objs as do
 from plotly.subplots import make_subplots
 import pandas as pd
 
-##external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
 app = dash.Dash(__name__)
-
 server = app.server
+app.title = 'Philippine Power Sources'
 
 df = pd.read_excel('electricity_prod_databank.xlsx')
 df_new = df.set_index('SeriesName')
