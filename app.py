@@ -208,7 +208,7 @@ def update_charts(year_select):
     fit.update_yaxes(title_text='% Share',showgrid=True, row=1, col=2)
 
     fit.update_layout({'transition':{'duration':1000}},
-    			showlegend=False)
+    			showlegend=False, hovermode='x')
     fit.update_layout(annotations=[annotate1,annotate2,annotate3])
     
     
